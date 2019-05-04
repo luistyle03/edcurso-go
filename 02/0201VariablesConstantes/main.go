@@ -14,7 +14,7 @@ func main() {
 
 	//No se puede usar nuevamente el simbolo de declaracion y asignacion(:=)
 	//nombre: = "Pedro"
-	//Sin embargo se puede utilizar (:=) siempre y cuando al menos uno de ellos se declara y se asigna
+	//Sin embargo se puede utilizar (:=) siempre y cuando al menos uno de ellos se declara y se asigna (en este caso edad)
 	nombre, edad := "Pedro", 20
 
 	fmt.Println(nombre, apellido, apellido2, edad)
