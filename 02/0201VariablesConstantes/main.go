@@ -4,18 +4,24 @@ import "fmt"
 
 func main() {
 
-	var apellido2 string
-	apellido2 = "Mendez"
+	//Declarando y luego asignado valor a una variables
+	var apellido1 string
+	apellido1 = "Mendez"
 
-	//declara y asigna el tipo de dato lo determina el dato que lo incializa
-	nombre, apellido := "Pedro", "Luis"
+	//Declarando y luego asignado valores a varias variables
+	var nombre2, apellido2 string
+	nombre2 = "Pedro"
+	apellido2 = "Rodriguez"
 
-	nombre = "Alexys"
+	//declara y asigna en una sola linea. El tipo de dato lo determinar el valor de inicializacion de la variable
+	nombre3, apellido3 := "Pedro", "Luis"
 
 	//No se puede usar nuevamente el simbolo de declaracion y asignacion(:=)
-	//nombre: = "Pedro"
-	//Sin embargo se puede utilizar (:=) siempre y cuando al menos uno de ellos se declara y se asigna (en este caso edad)
-	nombre, edad := "Pedro", 20
+	//nombre3: = "Pedro"
 
-	fmt.Println(nombre, apellido, apellido2, edad)
+	//Sin embargo se puede utilizar solo para asignar (:=), siempre y cuando al menos en la misma linea uno de ellos se declare y asigne (en este caso edad)
+	nombre3, edad3 := "Alexyx", 20
+
+	fmt.Println(apellido1, nombre2, apellido2, nombre3, apellido3, edad3)
+
 }
