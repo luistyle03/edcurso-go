@@ -11,6 +11,8 @@ type Persona struct {
 func (p Persona) saludar() {
 	fmt.Println("Hola soy una persona")
 }
+
+//Se le pone puntero a Persona porque cambiaremos una propiedad del struct(Clase)
 func (p *Persona) asignarEdad(e int8) {
 	if e >= 0 {
 		p.edad = e
