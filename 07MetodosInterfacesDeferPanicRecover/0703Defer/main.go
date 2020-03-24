@@ -16,10 +16,12 @@ func main() {
 	fmt.Println("Conectamos a la base de datos..")
 
 	//Falle o no la conexion a la base de datos, una vez que acabe todo la funcion main, cerrarBaseDatos se ejecutara
+	//Se estila poner siempre despues de un posible error. En este caso fue conexion a base de datos y se usa para liberar recursos del sistema
 	defer cerrarBaseDatos()
 
 	fmt.Println("Consultamos informacion, set de datos")
 	//Falle o no la conexion la consulta de datos, una vez que acabe toda la funcion main, cerrarsetDatos se ejecutara
+	//Se estila poner siempre despues de un posible error. En este caso fue conexion a consulta de informacion y se usa para liberar recursos del sistema
 	defer cerraSetDatos()
 
 }
