@@ -47,6 +47,3 @@ func esPrimo(a int) (r bool) {
 	return
 }
 
-/*if esPrimo(i) {
-	fmt.Println(i)
-}*/
